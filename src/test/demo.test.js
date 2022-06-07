@@ -1,6 +1,11 @@
-test('first test, must be true ', () => {
-  const isActive=true;
-  if(isActive) {
-    throw new Error('No esta activo');
-  }
-})
+describe('Test in demo.test.js file', () => {
+  test('must be equals', () => {
+    // inicializacion
+    const m1='Kakaroto';
+    // estimulo
+    const m2="Kakaroto";
+    // observar comportamiento
+    expect(m1).toBe(m2);
+  });
+});
+
